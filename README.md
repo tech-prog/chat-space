@@ -1,3 +1,5 @@
+# DB設計
+
 # README
 
 This README would normally document whatever steps are necessary to get the
@@ -23,8 +25,14 @@ Things you may want to cover:
 
 * ...
 
-## groups_usersテーブル
+## users_table
+|Column|Type|Options|
+|------|----|-------|
+|name|string|index: true, null: false:true|
+|mail|string|null: false|
 
+
+## groups_usersテーブル
 |Column|Type|Options|
 |------|----|-------|
 |user_id|integer|null: false, foreign_key: true|
